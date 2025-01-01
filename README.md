@@ -1,2 +1,56 @@
-# TextEnhanceAI
-A user-friendly, Python-based Markdown editor that leverages a locally hosted LLM (via Ollama right now) for simple text enhancements, proofreading, and rewriting. 
+# TextEnhanceAI - Editor with Local LLM Integration #
+
+A user-friendly, Python-based editor that leverages a locally hosted LLM (via [Ollama](https://github.com/jmorganca/ollama) for now) for fast text enhancements, proofreading, and rewriting. Whether you’re polishing a blog post, correcting grammar, or simplifying your wording, this editor enables you to harness the power of local generative AI right from your desktop—no cloud services needed.
+
+## Key Features
+
+1. **Inline Editing and Diff View**  
+   - Type or paste your plain text into the editor, then click an editing action (Grammar, Proofread, Rewrite, etc.).  
+   - The application compares your text against the AI-edited output and highlights changes inline.  
+   - Deletions appear in red, additions in green.
+
+2. **Multiple Editing Modes**  
+   - Built-in prompts let you quickly fix grammar, streamline awkward phrases, or make your text more concise.  
+   - A customizable “Custom Prompt” option allows you to craft specialized instructions for the LLM.
+
+3. **Accept / Reject All Changes**  
+   - Quickly apply all AI-suggested edits with “Accept All Changes,” or revert them entirely with “Reject All Changes.”  
+
+4. **Scratchpad Logging**  
+   - Every edit is logged to a Markdown scratchpad file.  
+   - The original user text and the LLM’s edited text are saved side by side, with any removed/added words highlighted in **bold** Markdown, helping you track changes over time.
+
+5. **Local LLM Support**  
+   - Connects to a locally hosted LLM through Ollama.  
+   - No internet connection required—your content stays on your own machine.
+
+## Getting Started
+
+1. **Install Requirements**  
+   - Ensure Python 3.7+ is installed.  
+   - Install the [Ollama](https://github.com/jmorganca/ollama) package and run your local LLM server with llama3.1:8b.  
+   - Install other Python dependencies (e.g., `tkinter`—usually bundled with Python, `difflib`—comes with standard library).
+
+2. **Run the App**  
+   ```bash
+   python TextEnhanceAI.py
+   ```
+   If Ollama is running, you’ll see the main editor window.
+
+3. **Use the Editing Buttons**  
+   - Type or paste your text.  
+   - Click on an editing button (e.g., “Grammar,” “Proofread”) to send a prompt to the local LLM.  
+   - The edited text will be displayed inline, with suggested deletions in red and additions in green.
+
+4. **Accept/Reject Changes**  
+   - When ready, you can accept all or reject all of the AI-suggested edits.
+   - The edition scrachpad is saved in the same directory. This way, you can review the output whatever your choices.
+   - When done, simply copy the text and past it where you want to use it.
+
+## Contact
+
+For questions, feedback, or collaboration opportunities, feel free to reach out:
+
+📧 Email: [wenrolland@designecologique.ca](mailto:wenrolland@designecologique.ca)
+
+I’d love to hear from you! 😊
