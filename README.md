@@ -2,6 +2,8 @@
 
 A user-friendly, Python-based editor that leverages a locally hosted LLM (via [Ollama](https://github.com/jmorganca/ollama) for now) for fast text enhancements, proofreading, and rewriting. Whether you’re polishing a blog post, correcting grammar, or simplifying your wording, this editor enables you to harness the power of local generative AI right from your desktop—no cloud services needed.
 
+![App Window - v0.1](https://github.com/wenrolland/TextEnhanceAI/blob/main/TextEnhanceAI-v0.1.png)
+
 ## Key Features
 
 1. **Inline Editing and Diff View**  
