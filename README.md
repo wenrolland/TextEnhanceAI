@@ -30,23 +30,30 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
 
 1. **Install Requirements**  
    - Ensure Python 3.7+ is installed.  
-   - Install the [Ollama](https://github.com/jmorganca/ollama) package and run your local LLM server with llama3.1:8b.  
-   - Install other Python dependencies (e.g., `tkinter`—usually bundled with Python, `difflib`—comes with standard library).
+   - Install the [Ollama](https://github.com/jmorganca/ollama) package.
+   - Download llama3.1:8b in Ollama :
+      ```bash
+      ollama pull llama3.1:8b
+      ```
+   - Install other Python dependencies as needed (e.g., `tkinter`—usually bundled with Python, `difflib`—comes with standard library).
 
 2. **Run the App**  
-   ```bash
-   python TextEnhanceAI.py
-   ```
+   Clone the repository or simply download TextEnhanceAI.py to get the program. Launch it using :
+      ```bash
+      python TextEnhanceAI.py
+      ```
    If Ollama is running, you’ll see the main editor window.
 
-3. **Use the Editing Buttons**  
+   I also created an executable windows application with [PyInstaller](https://pyinstaller.org/en/stable/usage.html) available in the [Releases](https://github.com/wenrolland/TextEnhanceAI/releases). With this executable, no need for Python, just install Ollama and pull llama3.1:8b.
+
+4. **Use the Editing Buttons**  
    - Type or paste your text.  
    - Click on an editing button (e.g., “Grammar,” “Proofread”) to send a prompt to the local LLM.  
    - The edited text will be displayed inline, with suggested deletions in red and additions in green.
 
-4. **Accept/Reject Changes**  
-   - When ready, you can accept all or reject all of the AI-suggested edits.
-   - The edition scrachpad is saved in the same directory. This way, you can review the output whatever your choices.
+5. **Accept/Reject Changes**  
+   - When ready, you can accept all or reject all the AI-suggested edits.
+   - The edition scratchpad is saved in the same directory. This way, you can review the output, whatever your choices.
    - When done, simply copy the text and past it where you want to use it.
 
 ## Contact
