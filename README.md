@@ -54,7 +54,7 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
 5. **Accept/Reject Changes**  
    - When ready, you can accept all or reject all the AI-suggested edits.
    - The edition scratchpad is saved in the same directory. This way, you can review the output, whatever your choices.
-   - When done, simply copy the text and past it where you want to use it.
+   - When done, simply copy the text and paste it where you want to use it.
 
 ## Contact
 
