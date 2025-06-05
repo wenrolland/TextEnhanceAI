@@ -396,12 +396,14 @@ class EditorApp:
     # --------------
     # Logging / Scratchpad
     # --------------
-    def log_to_scratchpad(self, text):
+    def log_to_scratchpad(self, *texts):
         """Write changes and actions to the scratchpad file."""
         if not self.scratchpad_filename:
             return
         with open(self.scratchpad_filename, "a", encoding="utf-8") as f:
-            f.write(text + "\n")
+            for text in texts:
+                f.write(text)
+            f.write("\n")
 
 
 # --------------
