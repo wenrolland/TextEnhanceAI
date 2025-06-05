@@ -104,7 +104,7 @@ def create_tooltip(widget, text):
 class EditorApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("TextEnhanceAI Editor with Local LLM - V 0.1")
+        self.root.title("TextEnhanceAI Editor with Local LLM - V 0.11")
 
         # ----------------------
         # 1) Set starting size and use it as the minimum
