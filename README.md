@@ -19,7 +19,7 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
    - Quickly apply all AI-suggested edits with “Accept All Changes,” or revert them entirely with “Reject All Changes.”  
 
 4. **Scratchpad Logging**  
-   - Every edit is logged to a Markdown scratchpad file.  
+   - Every edit is logged to a Markdown scratchpad file. [Example](https://github.com/wenrolland/TextEnhanceAI/blob/main/TextEnhanceAI-scratchpad_20250605_191604.md)
    - The original user text and the LLM’s edited text are saved side by side, with any removed/added words highlighted in **bold** Markdown, helping you track changes over time.
 
 5. **Local LLM Support**  
