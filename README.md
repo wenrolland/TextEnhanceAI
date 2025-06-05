@@ -44,8 +44,6 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
       ```
    If Ollama is running, you’ll see the main editor window.
 
-   I also created an executable windows application with [PyInstaller](https://pyinstaller.org/en/stable/usage.html) available in the [Releases](https://github.com/wenrolland/TextEnhanceAI/releases). With this executable, no need for Python, just install Ollama and pull llama3.1:8b.
-
 4. **Use the Editing Buttons**  
    - Type or paste your text.  
    - Click on an editing button (e.g., “Grammar,” “Proofread”) to send a prompt to the local LLM.  
