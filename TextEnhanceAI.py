@@ -112,6 +112,8 @@ class EditorApp:
         self.root.geometry("800x600")
         self.root.minsize(800, 600)
 
+        # 2) Initialize widgets and buttons
+
         # Ollama client (make sure you've installed and are running your local LLM server)
         self.ollama_client = Client() if Client else None
 
