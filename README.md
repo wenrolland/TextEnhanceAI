@@ -29,7 +29,7 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
 ## Getting Started
 
 1. **Install Requirements**  
-   - Ensure Python 3.7+ is installed.  
+   - Ensure Python 3.7+ is [installed](https://www.python.org/downloads/).  
    - Install the [Ollama](https://github.com/jmorganca/ollama) package.
    - Download llama3.1:8b in Ollama :
       ```bash
