@@ -296,19 +296,25 @@ class EditorApp:
         """
         self.text_area.delete("1.0", tk.END)
 
-        diff = difflib.ndiff(old_text.split(), new_text.split())
+        # Split on whitespace while keeping the whitespace tokens so that
+        # newline characters and other spacing are preserved in the output
+        old_tokens = re.split(r'(\s+)', old_text)
+        new_tokens = re.split(r'(\s+)', new_text)
+
+        diff = difflib.ndiff(old_tokens, new_tokens)
 
         for token in diff:
             # token starts with '  ' (no change), '- ' (deletion), or '+ ' (addition)
+            text = token[2:]
             if token.startswith("  "):
                 # no change
-                self.text_area.insert(tk.END, token[2:] + " ")
+                self.text_area.insert(tk.END, text)
             elif token.startswith("- "):
                 # deletion
-                self.text_area.insert(tk.END, token[2:] + " ", ("deletion",))
+                self.text_area.insert(tk.END, text, ("deletion",))
             elif token.startswith("+ "):
                 # addition
-                self.text_area.insert(tk.END, token[2:] + " ", ("addition",))
+                self.text_area.insert(tk.END, text, ("addition",))
 
         # Tag styles
         self.text_area.tag_config("deletion", foreground="red")
