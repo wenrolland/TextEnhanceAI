@@ -61,3 +61,9 @@ For questions, feedback, or collaboration opportunities, feel free to reach out:
 📧 Email: [wenrolland@designecologique.ca](mailto:wenrolland@designecologique.ca)
 
 I’d love to hear from you! 😊
+
+---
+
+## Updates
+
+**Version 0.11** : Fixes the formating to keep the line breaks after editing. 
