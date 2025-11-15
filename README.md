@@ -61,6 +61,6 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
 
 ## Updates
 
-**Version 0.12**: Adds Model dropdown to choose local Ollama models and improves status text.
+**Version 0.12**: Adds Model dropdown to choose local Ollama models and improves status text.  
 **Version 0.11**: Fixes formatting to keep line breaks after editing.
 
