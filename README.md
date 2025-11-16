@@ -35,7 +35,9 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
 **1. Install Requirements**  
    - Ensure Python 3.7+ is installed.  
    - Install the Ollama Python package: `pip install ollama`.  
-   - Pull a model in Ollama: `ollama pull llama3.1:8b`.
+   - Pull a model in Ollama
+      - If you have a GPU with 6 to 8 gb of VRAM : `ollama pull llama3.1:8b`
+      - If you don't have a GPU: `ollama pull qwen3:1.7b`.
 
 **2. Using uv (optional if installed)**  
    - `cd TextEnhanceAI`  
