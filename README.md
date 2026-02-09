@@ -51,9 +51,9 @@ A user-friendly, Python-based editor that leverages a locally hosted LLM (via [O
 
 **4. Use the Editing Buttons**  
    - Type or paste your text in any language supported by your LLMs.  
+   - Choose the LLM from the Model dropdown (defaults to `llama3.1:8b`). Use the Refresh button to reload locally available models from Ollama.
    - Click an editing button (e.g., "Grammar", "Proofread").  
    - The edited text is displayed inline, with changes highlighted.
-   - Choose the LLM from the Model dropdown (defaults to `llama3.1:8b`). Use the Refresh button to reload locally available models from Ollama.
 
 ## Contact
 
